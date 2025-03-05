@@ -101,3 +101,5 @@ learnSys.iml
 **/.env
 
 **/static/
+
+**/*.db
