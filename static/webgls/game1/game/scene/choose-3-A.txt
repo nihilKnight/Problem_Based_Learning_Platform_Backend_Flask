@@ -1,0 +1,7 @@
+bgm:s_Title.mp3;
+changeBg:bg-1.png -next;
+changeFigure:tongxiaoji-1.png -left -next;
+changeFigure:linwaner-1.png -right -next;
+答案:恭喜你，回答正确！|HIV EIA检查的目的，是什么排除HIV(最常见的继发性免疫缺陷疾病)。 -fontSize=default;
+问题4:你认为做血清总IgA、IgG、IgM水平检查,破伤风、流感嗜血杆菌和白喉抗体滴度检查的目的是什么？ -notend -fontSize=default;
+choose:A：排查B细胞介导的体液免疫异常:choose-4-A.txt|B：排查T细胞介导的细胞免疫异常:choose-4-B.txt|C：排查补体水平异常 :choose-4-C.txt|D：排查中性粒重要黏附分子表达异常:choose-4-D.txt;

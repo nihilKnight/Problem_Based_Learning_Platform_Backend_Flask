@@ -1,0 +1,8 @@
+bgm:s_Title.mp3;
+changeBg:bg.png -next;
+changeFigure:tongxiaoji-1.png -left -next;
+changeFigure:liuli-2.png -right -next;
+答案:不好意思，回答错误！|正确答案是维生素B12。 -fontSize=default;
+答案:维生素B12是叶酸代谢过程中的关键辅酶，参与甲基转移反应。当维生素B12缺乏时，叶酸无法正常转化为活性形式，导致叶酸的功能性不足。 -fontSize=default;
+问题4:为什么备孕期间男性也要补充叶酸？ -fontSize=default;
+choose:A：提高精子质量:choose-4-A.txt|B：增强肌肉力量:choose-4-B.txt|C：改善心血管健康:choose-4-C.txt|D：增加身体免疫力:choose-4-D.txt;

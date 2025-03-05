@@ -1,0 +1,16 @@
+bgm:s_Title.mp3;
+changeBg:bg.png -next;
+changeFigure:tongxiaoji-1.png -left -next;
+changeFigure:liuli-2.png -right -next;
+同小济:你生活习惯怎么样，有没有抽烟喝酒？ -fontSize=default;
+刘丽:我平时也不抽烟不喝酒的，睡眠运动饮食一向很规律的。 -fontSize=default;
+同小济:那你平时挑食吗，绿叶蔬菜啊，豆制品啊，动物肝脏啊，吃不吃啊？ -fontSize=default;
+changeFigure:liulizhangfu-2.png -right -next;
+刘丽丈夫:她胃口很好，从来不挑食，你说的这些东西她都吃。 -fontSize=default;
+同小济:那她在哪里上班，有接触什么重金属、辐射什么东西的吗？ -fontSize=default;
+刘丽丈夫:她是全职太太，应该不会接触这些危险的东西，会不会是她的那一堆化妆品。 -fontSize=default;
+changeFigure:liuli-2.png -right -next;
+刘丽:怎么可能，我怀孕后，把我的化妆品全送人了！ -fontSize=default;
+同小济:那就应该不是生活习惯的问题了。 -fontSize=default;
+问题2:针对目前情况，你认为刘丽是因为什么因素导致的叶酸缺乏？ -fontSize=default;
+choose:A：不良的膳食及生活习惯:choose-2-A.txt|B：基因缺陷导致的叶酸利用能力低下:choose-2-B.txt|C：服用药物中存在抗叶酸剂:choose-2-C.txt|D：其他疾病(胃肠道消化不良、糖尿病):choose-2-D.txt;

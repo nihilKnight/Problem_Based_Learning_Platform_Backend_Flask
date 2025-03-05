@@ -1,0 +1,10 @@
+bgm:s_Title.mp3;
+changeBg:bg-1.png -next;
+changeFigure:tongxiaoji-1.png -left -next;
+changeFigure:linwaner-1.png -right -next;
+答案:不好意思，回答错误！|磺胺类抗生素单用或联用是治疗诺卡菌病的首选。
+同小济:乐天出院后需完成至少6个月的全强度TMP-SMX治疗，随后继使用TMP-SMX进行低剂量抑制治疗，并密切监测其他病原体的感染。 -fontSize=default;
+林婉儿:谢谢医生，这样乐天的病就能好了吗? -fontSize=default;
+同小济:我们采取的是药物治疗方式，该方式仅可控制病原体的感染，并不能从源头上治疗疾病。 -fontSize=default;
+同小济:如果想从源头上治疗该病，治疗方式包括基因治疗和造血干细胞移植。|基因治疗尚处于实验阶段，造血干细胞移植我们可以进一步讨论。 -fontSize=default;
+end;

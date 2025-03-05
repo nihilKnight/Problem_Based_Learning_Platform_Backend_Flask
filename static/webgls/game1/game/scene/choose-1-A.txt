@@ -1,0 +1,15 @@
+bgm:s_Title.mp3;
+changeBg:bg-1.png -next;
+changeFigure:tongxiaoji-1.png -left -next;
+changeFigure:zhangletian-2.png -right -next;
+答案:恭喜你，回答正确！血氧饱和度降低，考虑为低张性缺氧或血液性缺氧。并且患者出现了咳嗽咳痰、体温升高、脉搏加快的症状，这提示患有可能有感染或炎症。 -fontSize=default;
+答案:所以答案为低张性缺氧。|接下来让我们了解这四种缺氧吧！ -fontSize=default;
+intro:低张性缺氧是由于吸入的氧气分压降低或肺部气体交换障碍，导致动脉血氧分压降低。|常见原因包括：①高原环境（大气氧分压低）；②呼吸道阻塞（如哮喘、慢性阻塞性肺病）；③肺部疾病（如肺炎、肺水肿、肺纤维化）。|动脉血氧分压降低|最大氧含量正常或升高|动脉血氧含量降低|动脉血氧饱和度降低|动静脉血氧含量差正常或降低 -fontSize=small -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500 -hold;
+intro:血液性缺氧是由于血红蛋白数量减少或功能异常，导致血液携氧能力下降。|常见原因包括：①贫血（血红蛋白减少）；②一氧化碳中毒（血红蛋白与一氧化碳结合，失去携氧能力）；③高铁血红蛋白血症（血红蛋白失去携氧能力）。|动脉血氧分压正常|最大氧含量正常或降低|动脉血氧含量降低|动脉血氧饱和度正常或降低|动静脉血氧含量差降低 -fontSize=small -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+intro:循环性缺氧是由于血液循环障碍，导致组织灌注不足，氧气无法有效输送到组织。|常见原因包括：①心力衰竭；②休克（如感染性休克、低血容量性休克）；③局部缺血（如动脉栓塞）。|动脉血氧分压正常|最大氧含量正常|动脉血氧含量正常|动脉血氧饱和度正常|动静脉血氧含量差升高 -fontSize=small -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500 -hold;
+intro:组织性缺氧是由于组织细胞利用氧气的能力下降，导致氧气无法被有效利用。|常见原因包括：①氰化物中毒（抑制细胞色素氧化酶，阻断细胞呼吸链）；②酒精中毒；③线粒体功能障碍。|动脉血氧分压正常|最大氧含量正常|动脉血氧含量正常|动脉血氧饱和度正常|动静脉血氧含量差降低 -fontSize=small -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500 -hold;
+同小济:乐天啊让叔叔再检查一下，你身上还有哪里不舒服。|（张乐天点点头） -fontSize=default -left;
+体格检查结果:乐天两个鼻孔周围有中度，化脓性结痂。|颈部见淋巴结肿大。有相当严重的牙龈炎，没有其他口腔病变或鹅口疮。 -fontSize=default;
+体格检查结果:胸部及手臂处有几个疖子。右上肺有干啰音，无喘鸣、叩诊未见浊音。|心脏、腹部及神经系统检查正常。 -fontSize=default;
+问题2:针对目前现状，你认为张乐天的疾病可能为？ -notend -fontSize=default;
+choose:A：肺炎:choose-2-A.txt|B：其他:choose-2-B.txt;

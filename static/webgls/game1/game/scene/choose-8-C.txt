@@ -1,0 +1,16 @@
+bgm:s_Title.mp3;
+changeBg:bg-1.png -next;
+changeFigure:tongxiaoji-1.png -left -next;
+changeFigure:linwaner-1.png -right -next;
+答案:不好意思，回答错误！做中性粒细胞呼吸爆发实验和NBT试验检查的目的，是为了排查中性粒细胞杀菌能力缺陷。 -fontSize=default;
+同小济:目前做过了免疫功能检查，显示中性粒呼吸爆发异常，我怀疑应该是慢性肉芽肿病，为了确认我的想法，需要做一个基因检测。 -fontSize=default;
+林婉儿:慢性肉芽肿病？严重吗？为什么要做基因检测？|（带着哭腔......） -fontSize=default;
+同小济:乐天妈妈，你先不要紧张。根据乐天的症状和病史，我怀疑他可能患有一种罕见的疾病，叫做慢性肉芽肿病，这是一种遗传性疾病，会导致免疫系统功能低下，容易反复感染。 -fontSize=default;
+同小济:基因检测可以帮助我们确认这个诊断，并为后续治疗提供指导。 -fontSize=default;
+林婉儿:这……怎么可能？乐天怎么会得这种病？ -fontSize=default;
+同小济:别太担心，乐天妈妈。|虽然这是一种罕见的疾病，但只要我们确诊了，就可以针对性地进行治疗。 -fontSize=default;
+基因检测:基因检测结果显示：NCF1基因突变，NADPH氧化酶p47phox亚基缺陷。|张乐天被诊断为常染色体隐性的慢性肉芽肿病。 -fontSize=default;
+林婉儿:医生，你一定要救救我的儿子，他才八岁....... -fontSize=default;
+同小济:乐天妈妈，我一定会尽我所能，来制定一个适合乐天的治疗方案。 -fontSize=default;
+问题9:针对目前情况，你会给张乐天开什么药呢？ -notend -fontSize=default;
+choose:A：头孢类 :choose-9-A.txt|B：青霉素类:choose-9-B.txt|C：喹诺酮:choose-9-C.txt|D：磺胺类:choose-9-D.txt;

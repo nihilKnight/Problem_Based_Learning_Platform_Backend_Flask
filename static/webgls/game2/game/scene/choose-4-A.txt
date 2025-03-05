@@ -1,0 +1,7 @@
+bgm:s_Title.mp3;
+changeBg:bg.png -next;
+changeFigure:tongxiaoji-1.png -left -next;
+changeFigure:liuli-2.png -right -next;
+答案:恭喜你，回答正确！|正确答案是提高精子质量。 -fontSize=default;
+答案:叶酸是精子生成和DNA合成的重要营养素，能够改善精子的数量、活力和形态，减少精子染色体异常的风险，从而增加受孕成功率并降低胎儿出生缺陷的可能性。 -fontSize=default;
+end;

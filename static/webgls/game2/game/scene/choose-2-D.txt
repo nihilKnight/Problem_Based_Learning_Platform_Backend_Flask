@@ -1,0 +1,13 @@
+bgm:s_Title.mp3;
+changeBg:bg.png -next;
+changeFigure:tongxiaoji-1.png -left -next;
+changeFigure:liuli-2.png -right -next;
+同小济:你有没有感觉肠胃不太舒服，比如说消化不良之类的？ -fontSize=default;
+刘丽:应该没有呢，我很少出现肠胃方面的问题。 -fontSize=default;
+同小济:那你有糖尿病吗？ -fontSize=default;
+刘丽:医生我也不知道，要不你给我检查一下吧。 -fontSize=default;
+同小济:好，那你明天早上空腹来测个血糖吧。 -fontSize=default;
+空腹血糖检测:检查结果：血糖浓度5.2 mmol/L（正常） -fontSize=default;
+同小济:那应该就不是其他疾病（胃肠道消化不良和糖尿病）导致的叶酸缺乏。 -fontSize=default;
+问题2:针对目前情况，你认为刘丽是因为什么因素导致的叶酸缺乏？ -fontSize=default;
+choose:A：不良的膳食及生活习惯:choose-2-A.txt|B：基因缺陷导致的叶酸利用能力低下:choose-2-B.txt|C：服用药物中存在抗叶酸剂:choose-2-C.txt|D：其他疾病(胃肠道消化不良、糖尿病):choose-2-D.txt;
