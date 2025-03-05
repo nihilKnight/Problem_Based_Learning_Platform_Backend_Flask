@@ -1,5 +1,0 @@
-Game_name:奇怪的肺炎;
-Game_key:85b2d014c7e7a8;
-Title_img:start-1.png;
-Title_bgm:s_Title.mp3;
-Textbox_theme:imss;

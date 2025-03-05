@@ -1,9 +1,0 @@
-bgm:s_Title.mp3;
-changeBg:bg.png -next;
-changeFigure:tongxiaoji-1.png -left -next;
-changeFigure:liuli-2.png -right -next;
-同小济:你平时有服用什么药物吗？比如抗癫痫药、抗肿瘤药、抗感染药什么的？ -fontSize=default;
-刘丽:医生你说的这些我都不太懂，我身体一般挺好的，没得过什么病，也不怎么吃药，就是我备孕期间就吃点这些保健品，我带过来了，你看一下，应该没有问题吧。 -fontSize=default;
-同小济:没有什么问题，那应该不是药物导致的。|（认真检查） -fontSize=default;
-问题2:针对目前情况，你认为刘丽是因为什么因素导致的叶酸缺乏？ -fontSize=default;
-choose:A：不良的膳食及生活习惯:choose-2-A.txt|B：基因缺陷导致的叶酸利用能力低下:choose-2-B.txt|C：服用药物中存在抗叶酸剂:choose-2-C.txt|D：其他疾病(胃肠道消化不良、糖尿病):choose-2-D.txt;

@@ -99,3 +99,5 @@ learnSys.iml
 **/__pycache__/
 
 **/.env
+
+**/static/
