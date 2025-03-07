@@ -1,6 +1,7 @@
 from flask import Flask, render_template, jsonify, request, redirect, url_for, session, make_response, Response
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.middleware.proxy_fix import ProxyFix
 
 import random
 import string
@@ -22,6 +23,9 @@ from flask_cors import CORS
 load_dotenv()
 
 app = Flask(__name__)
+
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
+
 CORS(app, origins=['http://localhost:8080'], supports_credentials=True)
 
 app.config['STATIC_FOLDER'] = 'assets'
@@ -88,6 +92,18 @@ class TestCourse2(db.Model):
     cover = db.Column(db.String(200))
     video = db.Column(db.String(200))
     doc = db.Column(db.String(200))
+    description = db.Column(db.Text)
+    brief = db.Column(db.Text)
+    avatar = db.Column(db.String(200))
+    created_at = db.Column(db.DateTime, default=datetime.now)
+
+class TestCourse3(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(100), nullable=False)
+    cover = db.Column(db.String(200))
+    video = db.Column(db.String(200))
+    doc = db.Column(db.String(200))
+    game = db.Column(db.String(200))
     description = db.Column(db.Text)
     brief = db.Column(db.Text)
     avatar = db.Column(db.String(200))
@@ -257,7 +273,7 @@ def send_verification_code():
 
 @app.route('/api/v1/course/all')
 def course_list():
-    courses = TestCourse2.query.all()
+    courses = TestCourse3.query.all()
     if courses:
         return jsonify({
             'data': [{
@@ -274,7 +290,7 @@ def course_list():
 
 @app.route('/api/v1/course/<int:course_id>')
 def course_detail(course_id):
-    course = TestCourse2.query.filter(TestCourse2.id == course_id).first()
+    course = TestCourse3.query.filter(TestCourse3.id == course_id).first()
     if course:
         return jsonify({
             'success': True,
@@ -282,6 +298,7 @@ def course_detail(course_id):
             'cover': course.cover,
             'video': course.video,
             'doc': course.doc,
+            'game': course.game,
             'description': course.description,
             'created_at': course.created_at,
         })
@@ -291,10 +308,10 @@ def course_detail(course_id):
 def carousel():
     return jsonify({
         'data': [
-            'http://localhost:5000/static/carousels/Carousel1.jpg',
-            'http://localhost:5000/static/carousels/Carousel2.png',
-            'http://localhost:5000/static/carousels/Carousel3.png',
-            'http://localhost:5000/static/carousels/Carousel4.png',
+            '/static/carousels/Carousel1.jpg',
+            '/static/carousels/Carousel2.png',
+            '/static/carousels/Carousel3.png',
+            '/static/carousels/Carousel4.png',
         ],
         'success': True,
     })
