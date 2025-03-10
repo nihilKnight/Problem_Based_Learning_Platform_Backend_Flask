@@ -127,8 +127,7 @@ def login():
     
     # 验证验证码
     if 'captcha' not in session or captcha.upper() != session['captcha'].upper():
-        data = { 'code': 40100, 'message': '验证码错误' }
-        return jsonify(data)
+        return jsonify({'code': 40100, 'message': '验证码错误'})
     
     # 查询用户（邮箱或用户名）
     user = User.query.filter(
@@ -136,12 +135,10 @@ def login():
     ).first()
 
     if not user or not check_password_hash(user.password, password):
-        data = { 'code': 40100, 'message': '用户名或密码错误' }
-        return jsonify(data)
+        return jsonify({'code': 40100, 'message': '用户名或密码错误'})
     
     session['user'] = user.username
-    data = { 'code': 40101, 'message': '登录成功' }
-    return jsonify(data)
+    return jsonify({'code': 40101, 'message': '登录成功'})
 
 @app.route('/api/v1/user/logout')
 def logout():
